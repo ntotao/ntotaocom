@@ -189,19 +189,7 @@ into the {body} of the default.hbs template --}}
         <div class="m-load-comments__iframe l-wrapper in-comments js-comments-iframe">
           <div id="disqus_thread"></div>
           <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="JnslVQyG"
-            data-limit="7"></script>
-          <script>
-            var disqus_config = function () {
-              this.page.url = "{{url absolute="true"}}";
-              this.page.identifier = "ghost-{{comment_id}}"
-            };
-            (function () {
-              var d = document, s = d.createElement('script');
-              s.src = 'https://ntotao.disqus.com/embed.js';
-              s.setAttribute('data-timestamp', +new Date());
-              (d.head || d.body).appendChild(s);
-            })();
-          </script>
+            data-limit="7"></script> {{! Telegram comments integration}}
         </div>
       </section>
 
