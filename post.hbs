@@ -188,6 +188,8 @@ into the {body} of the default.hbs template --}}
         </div>
         <div class="m-load-comments__iframe l-wrapper in-comments js-comments-iframe">
           <div id="disqus_thread"></div>
+          <script async src="https://comments.app/js/widget.js?3" data-comments-app-website="JnslVQyG"
+            data-limit="7"></script>
           <script>
             var disqus_config = function () {
               this.page.url = "{{url absolute="true"}}";
@@ -202,6 +204,7 @@ into the {body} of the default.hbs template --}}
           </script>
         </div>
       </section>
+
       {{/post}}
       {{!-- Related posts --}}
       {{#get "posts" limit="3" filter="tags:[{{post.tags}}]+id:-{{post.id}}" include="tags,authors" as |related|}}
