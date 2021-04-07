@@ -1,12 +1,12 @@
 /** Global styles */
-.post-content h2,
-.post-content h3 {
+.l-post-content h2,
+.l-post-content h3 {
     outline: none;
 }
 body {
     overflow: visible;
 }
-.post-full-content {
+.l-post-full-content {
     display: grid;
     grid-template-columns: 1fr 0.2fr;
     padding: 0 0 6vw;
